@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a id="up"></a>
+<div class="block">
+    <header>
+       <div class="img">
+           <div></div>
+       </div>
+       <div class="text">
+           <h1 class="text_header">
+               KARSIARINA <br> MOSKALEVA
+           </h1>
+           <h2>
+               Junior Frontend Developer
+           </h2>
+
+           <div class="icon_city">
+               Gomel, Belarus
+               <img src="img/icon/location-point.178x256.png" alt="location" width="20px">
+           </div>
+       </div>
+    </header>
+    <nav>
+     <ul>
+         <li><a href="#sumary">ABOUT ME</a></li>
+         <li><a href="#skills">SKILLS</a></li>
+         <li><a href="#inf">CONTACT INFORMATION</a></li>
+         <li><a href="#work">WORK EXPERIENCE</a></li>
+         <li><a href="#ed">EDUCATION</a></li>
+         <li><a href="#code">CODE EXAMPLE</a></li>
+     </ul>
+    </nav>
+    <main>
+        <article>
+            <h2 id="sumary">ABOUT ME</h2>
+            <p>
+                In my professional life, I am constantly faced with the task of finding and correcting errors in student projects. I get tremendous pleasure not only when I teach, but also when I study myself. BUT
+                I am constantly developing myself. My slogan is "There is never too much knowledge." I really want to get into a team of professionals and become part of something bigger.
+            </p>
+            <h2 id="skills">SKILLS</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>basic knowledge JavaScript</li>
+                <li>the concept of adaptive layout</li>
+                <li>GitHub</li>
+                <li>Postman</li>
+                <li>Charles</li>
+                <li>SQL</li>
+                <li>API</li>
+            </ul>
+            <h2 id="inf">CONTACT INFORMATION</h2>
+            <div class="container">
+                <h3 class="indent_bottom">Phone:</h3>
+                <div class="wrap">
+                    <p class="container">+375(29) 184-78-53</p>
+                    <img src="img/icon/phone_iphone_FILL0_wght400_GRAD0_opsz48.svg" alt="phone" width="20" class="img_pad">
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="indent_bottom">Email:</h3>
+                <div class="wrap">
+                    <p class="container"> moskkaty@gmail.com </p>
+                    <img src="img/icon/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="email" width="20" class="img_pad">
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="indent_bottom">Discord:</h3>
+                <div class="wrap">
+                    <p class="container">Katsiarins81</p>
+                    <img src="img/icon/discord.svg" alt="discord" width="20" class="img_pad">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="wrapper">
+                <div class="box suitcase"></div>
+                <h2 class="header" id="work">WORK EXPERIENCE</h2>
+            </div>
+            <h3>Programming course teacher since 2007</h3>
+            <p>GOMEL STATE REGIONAL PALACE OF CREATIVITY OF CHILDREN AND YOUTH</p>
+            <ul>
+                <li>WEB-development</li>
+                <li>Programming in the Scratch environment</li>
+                <li>Robotics</li>
+            </ul>
+            <div class="wrapper">
+                <div class="box lamp"></div>
+                <h2 class="header" id="ed">EDUCATION</h2>
+            </div>
+            <h3>University F.Skorina, physicist <br> (diploma with honors)</h3>
+            <ul class="list_none">
+                <li><span class="text_bold">My IT school</span> - Testing (QA) course for web and mobile applications</li>
+                <li><span class="text_bold">WayUp</span> - "Web Layout Maker" and "JavaScript Dive"</li>
+                <li><span class="text_bold">freecodecamp.org</span>-JavaScript</li>
+                <li><span class="text_bold">ru.hexlet.io</span> - JavaScript</li>
+            </ul>
+            <div class="wrapper">
+                <div class="box lang"></div>
+                <h2 class="header">LANGUAGES</h2>
+            </div>
+            <P>
+                ENGLISH (Elementary) - I am currently passing couses
+            </P>
+            <p>RUSSIAN (Native)</p>
+        </article>
+    </main>
+    <aside>
+        <h2 id="code">CODE EXAMPLE</h2>
+        <p>Peak array index KATA from CODEWARS:The digital root is the recursive sum of all the digits of a number.
+
+            Given n, take the sum of the digits of n. If this value has more than one digit, keep decreasing in this way,
+            until a single digit is obtained. The input will be a non-negative integer. </p>
+        <pre>
+            let  digital_root = (n) => {
+              if (n>9){
+                n=String(n);
+                let arr = (n.split(''));
+                n=0;
+              for (let i=0;i&gt;arr.length;i++){
+                 n += Number(arr[i]);
+              }
+             return  digital_root(n);
+            }
+            return n;
+           }
+        </pre>
+    </aside>
+    <footer>
+        <a href="https://github.com/Katsiarins81">
+            <img src="img/icon/github.svg" alt="github" width="50px">
+        </a>
+        <p>2022</p>
+        <a href="https://rs.school/js/">
+        <img src="https://rs.school/images/rs_school_js.svg" alt="rs" width="100px">
+        </a>
+    </footer>
+   <a href="#up"><img src="img/icon/up.png" alt="up" class="up" ></a>
+
+</div>
+</body>
+</html>
